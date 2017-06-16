@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<header>
-		<title>这个是标题</title>
+		<title>html表格总结</title>
 		<meta charset='utf-8'><!--使用 <meta> 元素来设置字符集-->
 		<meta http-equiv="refresh" content="300"><!--使用 <meta> 每几秒刷新页面(content的参数值为秒)-->
 		<meta name="description" content="免费在线教程">
@@ -10,11 +10,171 @@
 		<base href="" target="_blank"><!-- 1.如果在这个地方设置了href,下面就可以用相对路径 2.如果这里有targe="_blank",下面的a标签,默认新标签页打开-->
 
 		<style type="text/css">
-		body {background-color:pink}
+		body {background-color:white}
 		p {color:yellow}
 		</style>
 	</header>
 	<body>
+	<!--****************************************************lesson1 表格*********************************************************-->
+		<h1>带标题的表格</h1>
+		<table border="1">
+		  <caption>这个是表格标题</caption>
+		  <tr>
+		    <th>Month</th>
+		    <th>Savings</th>
+		  </tr>
+		  <tr>
+		    <td>January</td>
+		    <td>$100</td>
+		  </tr>
+		  <tr>
+		    <td>February</td>
+		    <td>$50</td>
+		  </tr>
+		</table>
 	
+		<hr>
+		<!--********************************************************************************************************************************************-->
+		<h1>跨行和跨列的表格</h1>
+		<h4>单元格跨两格:</h4>
+		<table border="1">
+		<tr>
+		  <th>Name</th>
+		  <th colspan="2">Telephone</th><!--colspan="2"这个是重点-->
+		</tr>
+		<tr>
+		  <td>Bill Gates</td>
+		  <td>555 77 854</td>
+		  <td>555 77 855</td>
+		</tr>
+		</table>
+
+		<h4>单元格跨两列:</h4>
+		<table border="1">
+		<tr>
+		  <th>First Name:</th>
+		  <td>Bill Gates</td>
+		</tr>
+		<tr>
+		  <th rowspan="2">Telephone:</th><!--rowspan="2"这个是重点-->
+		  <td>555 77 854</td>
+		</tr>
+		<tr>
+		  <td>555 77 855</td>
+		</tr>
+		</table>
+		<hr>
+		<!--********************************************************************************************************************************************-->
+		<h1>表格边距(表格内部与四个边的内边距)</h1>
+		<h4>没有单元格边距:</h4>
+		<table border="1">
+		<tr>
+		  <td>First</td>
+		  <td>Row</td>
+		</tr>   
+		<tr>
+		  <td>Second</td>
+		  <td>Row</td>
+		</tr>
+		</table>
+
+		<h4>有单元格边距:</h4>
+		<table border="1" cellpadding="20"><!--cellpadding="20"这个是重点,表格内边距-->
+		<tr>
+		  <td>First</td>
+		  <td>Row</td>
+		</tr>   
+		<tr>
+		  <td>Second</td>
+		  <td>Row</td>
+		</tr>
+		</table>
+		<hr>
+		<!--********************************************************************************************************************************************-->
+		<h1>表格的间距(与四个边的外边距)</h1>
+		<h4>没有单元格间距:</h4>
+		<table border="1">
+		<tr>
+		  <td>First</td>
+		  <td>Row</td>
+		</tr>
+		<tr>
+		  <td>Second</td>
+		  <td>Row</td>
+		</tr>
+		</table>
+
+		<h4>单元格间距="0":</h4>
+		<table border="1" cellspacing="0"><!--cellspacing="0"这个是重点,外边距为0时,表格只有一条线-->
+		<tr>
+		  <td>First</td>
+		  <td>Row</td>
+		</tr>
+		<tr>
+		  <td>Second</td>
+		  <td>Row</td>
+		</tr>
+		</table>
+
+		<h4>单元格间距="10":</h4>
+		<table border="1" cellspacing="10">
+		<tr>
+		  <td>First</td>
+		  <td>Row</td>
+		</tr>
+		<tr>
+		  <td>Second</td>
+		  <td>Row</td>
+		</tr>
+		</table>
+		<hr>
+		<!--***********************************************************************************************************************-->
+		<h1>课程表实例</h1>
+		<table border="1" cellspacing="0" cellpadding="20" width="50%">
+			<tr>
+				<th>时间\日期</th><!--<th>与<td>相比,<th>中的字会居中,而<td>则不会-->
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+			</tr>
+			<tr>
+				<td rowspan="2">上午</td>
+				<td>语文</td>
+				<td>数学</td>
+				<td>英语</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>政治</td>
+				<td>地理</td>
+				<td>化学</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">下午</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<!--****************************************************lesson2 有序无序列表*********************************************************-->
+		<hr>
 	</body>
 </html>
