@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset='utf-8'>
+	</header>
+	<body id="brq"><!-- 我下面做了一个回到顶部,就是回到这个id的地方 -->
+										<!-- lesson1 -->
+		<h1>标题标签</h1>
+		<p>段落标签</p><!-- 浏览器会自动地在段落的前后添加空行。（</p> 是块级元素） -->
+		<a href="http://www.baidu.com">超链接标签:百度(本页跳转)</a><br>
+		<a href="http://www.baidu.com" target="_blank">超链接标签:百度(新标签页跳转)</a><br>
+		<br/><!-- 换行标签 -->
+		<img src="d:\Documents\Pictures\1474269587475939.png" width="100" height="100" /><!-- 图片标签 -->
+		<a href="http://www.baidu.com"><img src="d:\Documents\Pictures\1474269587475939.png" width="100" height="100" /></a><!-- 给图片加链接 -->
+		<!-- 注:最好使用<br/>这种写法,标签最好都用小写,因为xhtml中强制使用小写 -->
+										<!-- end -->
+
+										<hr/><!-- 水平线标签 -->
+
+										<!-- lesson2 -->
+		<!-- 1到6号标题与1到6号字体逆序对应，比如1号字体对应6号标题，2号字体对应5号标题。 <b>标签是加粗,将字体加粗,字体样式会和标题一样 -->
+		<h1>这是1号标题</h1>
+		<font size="6">这是6号字体文本</font>
+		<h2>这是2号标题</h2>
+		<font size="5">这是5号字体文本</font>
+		<h3>这是3号标题</h3>
+		<font size="4">这是4号字体文本</font>
+		<h4>这是4号标题</h4>
+		<font size="3">这是3号字体文本</font>
+		<h5>这是5号标题</h5>
+		<font size="2">这是2号字体文本</font>
+		<h6>这是6号标题</h6>
+		<font size="1">这是1号字体文本</font>
+										<!-- end -->
+
+										<hr/>
+
+										<!-- lesson3 -->
+		<b>加粗文本</b><br>
+		<strong>加粗文本</strong><br>
+		<i>斜体文本</i><br>
+		<em>斜体文本</em><br>
+		<code>电脑自动输出</code><br>
+		这是 <sub> 下标</sub> 和 <sup> 上标</sup><br>
+		<big>放大字体</big><br>
+		<small>缩小字体</small><br>
+<!-- 注:虽然<b>和<strong> 或者 <i>和<em>效果一样,但是后者意味着你要呈现的文本是重要的，所以要突出显示-->
+										<!-- end -->
+
+										<hr/>
+
+										<!-- lesson4 -->
+		<pre>
+			格式
+			  原样
+			 	输出的标签
+		</pre>
+
+		<address><!-- 地址标签,样式会变成斜体 -->
+		Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+		Visit us at:<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+		</address>
+
+		<p>该段落文字从左到右显示。</p>  
+		<p><bdo dir="rtl">该段落文字从右到左显示。(这是标签操作的)</bdo></p>
+		<del id="brq">字体删除线标签</del> <ins>字体下划线标签</ins><br>
+										<!-- end -->
+
+		<center><a href="#brq">回到顶部</a></center>
+	</body>
+</html>
