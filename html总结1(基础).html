@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<header>
-		<meta charset='utf-8'>
+		<title>这个是标题</title>
+		<meta charset='utf-8'><!--使用 <meta> 元素来设置字符集-->
+		<meta http-equiv="refresh" content="300"><!--使用 <meta> 每几秒刷新页面(content的参数值为秒)-->
+		<meta name="description" content="免费在线教程">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="runoob"><!--使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。-->
+		<base href="" target="_blank"><!-- 1.如果在这个地方设置了href,下面就可以用相对路径 2.如果这里有targe="_blank",下面的a标签,默认新标签页打开-->
+
+		<style type="text/css">
+		body {background-color:pink}
+		p {color:yellow}
+		</style>
 	</header>
 	<body id="brq"><!-- 我下面做了一个回到顶部,就是回到这个id的地方 -->
 										<!-- lesson1 -->
-		<h1>标题标签</h1>
-		<p>段落标签</p><!-- 浏览器会自动地在段落的前后添加空行。（</p> 是块级元素） -->
-		<a href="http://www.baidu.com">超链接标签:百度(本页跳转)</a><br>
+		<h1 style="text-align:center;">标题标签(用了居中对齐的css)</h1> <!-- style="text-align:center;" 居中对齐的css,用这个取代了<center>标签-->
+		<p style="color:green;margin-left:20px;background-color:yellow;">段落标签</p><!-- 1.浏览器会自动地在段落的前后添加空行。（</p> 是块级元素）2.style中是css -->
+		<a href="http://www.baidu.com" target="_self" style="text-decoration:none;">超链接标签:百度(本页跳转)</a><br><!-- style="text-decoration:none;"是去掉a标签的下划线-->
 		<a href="http://www.baidu.com" target="_blank">超链接标签:百度(新标签页跳转)</a><br>
 		<br/><!-- 换行标签 -->
-		<img src="d:\Documents\Pictures\1474269587475939.png" width="100" height="100" /><!-- 图片标签 -->
+		<img src="d:\Documents\Pictures\1474269587475939.png" width="100" height="100" /><br/><!-- 图片标签 -->
+		<img src="http://www.runoob.com/images/logo.png" alt="runoob.com" width="336" height="69"><br>
+		<img src="logo.png" alt="没有这张图片时,显示这句话" width="336" height="69"><br><!--alt 属性用来为图像定义一串预备的可替换的文本。在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息-->
 		<a href="http://www.baidu.com"><img src="d:\Documents\Pictures\1474269587475939.png" width="100" height="100" /></a><!-- 给图片加链接 -->
 		<!-- 注:最好使用<br/>这种写法,标签最好都用小写,因为xhtml中强制使用小写 -->
 										<!-- end -->
@@ -75,6 +88,6 @@
 										<hr/>
 <!--***********************************************************************************************************************************************-->
 
-		<center><a href="#brq">回到顶部</a></center>
+		<center><a href="#brq" target="_self">回到顶部</a></center>
 	</body>
 </html>
