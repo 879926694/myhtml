@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>这个是标题</title>
+		<meta charset='utf-8'><!--使用 <meta> 元素来设置字符集-->
+		<meta http-equiv="refresh" content="300"><!--使用 <meta> 每几秒刷新页面(content的参数值为秒)-->
+		<meta name="description" content="免费在线教程">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="runoob"><!--使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。-->
+		<base href="" target="_blank"><!-- 1.如果在这个地方设置了href,下面就可以用相对路径 2.如果这里有targe="_blank",下面的a标签,默认新标签页打开-->
+
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<h1>lesson 1: 表单(这个例子要在本地环境中测试)</h1>
+		<form action="text.php" method="post" enctype="text/plain">
+		<fieldset>
+		<legend>Personal information:</legend>
+		用户名: <input type="text" size="30"><br>
+		密码:   <input type="password" size="30"><br>
+		性别 : <input type="radio" name="sex" value="男">男
+		<input type="radio" name="sex" value="女" checked="checked">女<br>
+		爱好: <input type="checkbox" name="hobby" value="basketball">篮球
+  			  <input type="checkbox" name="hobby" value="Car" checked="checked">汽车 <!-- checked="checked"是默认选中的意思-->
+  			  <input type="checkbox" name="hobby" value="live">直播<br>
+  		文本域:<textarea rows="10" cols="20">
+				我是一个文本框。
+				</textarea><br>
+		下拉列表:<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat" selected>Fiat</option>
+				</select><br>
+		提交按钮:<input type="submit">
+		</fieldset>
+
+
+		<h1>lesson 2: 框架(在同一页面中显示另一个页面)</h1>
+		<iframe src="html总结2(表格).html" name="this_yemian" width="80%" height="30%"></iframe> <!--frameborder="0" 这个里加这个参数,变成无边框-->
+		<p><a href="http://www.baidu.com" target="this_yemian">跳到百度</a></p>
+
+		<h1>lesson 3: 设置颜色的方法</h1>
+		<p style="background-color:rgba(255,255,0,0.5)">设置颜色的方法:1.rgba</p>
+		<p style="background-color:yellow">设置颜色的方法:2.直接打颜色</p>
+		<p style="background-color:#FFFF00">设置颜色的方法:3.颜色的16进制</p>
+		<center><a href="http://www.runoob.com/html/html-colornames.html">颜色名的链接</a></center>
+	</body>
+</html>
