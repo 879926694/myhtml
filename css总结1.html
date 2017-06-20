@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>这个是标题</title>
+		<meta charset='utf-8'><!--使用 <meta> 元素来设置字符集-->
+		<meta http-equiv="refresh" content="300"><!--使用 <meta> 每几秒刷新页面(content的参数值为秒)-->
+		<meta name="description" content="免费在线教程">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="runoob"><!--使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。-->
+		<base href="" target="_blank"><!-- 1.如果在这个地方设置了href,下面就可以用相对路径 2.如果这里有targe="_blank",下面的a标签,默认新标签页打开-->
+
+		<link rel="stylesheet" type="text/css" href="mystyle.css"><!--这个是引用外部样式表的写法,外部演示表的写法和style标签中一模一样-->
+		<style type="text/css">
+			#menu {/*这个的background是复杂写法*/
+				background-color:pink; /*背景颜色*/
+				background-image:url('pic/brq.png'); /*背景图片,默认是平铺重复显示图片,铺满整个页面*/
+				background-repeat:no-repeat;/*背景图片重复平铺的方向,x是x轴方向,y是y轴方向,no-repeat是不重复*/
+				background-attachment:fixed;/*这个属性是图片固定*/
+				background-position:center;/*背景图片定位1.center中间 2.top上方 3.bottom下方 4.left top左上 5.left center左中 6.left bottom左下 右边加right,同左*/
+				height:200px;/*div高度*/
+				width:300px;/*div宽度*/
+				float:left;/*div左漂浮*/
+			}
+			#menu {/*这个的background是简易写法*/
+				background:pink url('pic/brq.png') no-repeat center; /*background的简写方式:顺序为1.background-color 2.background-image 3.background-repeat 4.background-attachment 5.background-position*/
+				height:200px;/*div高度*/
+				width:100%;/*div宽度*/
+				float:left;/*div左漂浮*/
+			}
+			#div1{
+				float:right;
+				margin-left:200px;
+				background:#5d9ab2 url('pic/1.png') no-repeat top left;
+				height:600px;
+				width:870px;
+			}
+
+			.container
+			{
+				text-align:center;
+			}
+
+			.center_div
+			{
+				border:1px solid gray;
+				margin-left:auto;
+				margin-right:auto;
+				width:70%;
+				background-color:#d0f0f6;
+				text-align:left;
+				padding:8px;
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is a header 1</h1>
+		<hr>
+
+		<p>查看css样式</p>
+		<p><a href="http://www.baidu.com" target="_blank">我是百度</a></p>
+		<hr style="color:red;" /><!--hr标签的样式不能这样改,百度有hr加样式的方法-->
+
+		<h1 class="class">id选择器和类选择器的样式设置</h1> <!--1.使用.p时,h1标签和p标签样式都改变 2.使用p.p时p标签改变,而h1标签不变-->
+		<p class="class" style="text-align:left;">id选择器和类选择器的样式设置</p>
+		<p id="id">id选择器和类选择器的样式设置</p>
+		<!--1.ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用 2.类名的第一个字符不能使用数字!它无法在 Mozilla 或 Firefox 中起作用。-->
+
+		<h1> lesson1 : css中的背景</h1>
+		<div id="menu"> <!--样式在#menu中-->
+		</div>
+
+		<hr>
+		<h1>样例</h1>
+		<div id='div1'>
+			<div class="container">
+			<div class="center_div">
+			<h1>Hello World!</h1>
+			<p>This example contains some advanced CSS methods you may not have learned yet. But, we will explain these methods in a later chapter in the tutorial.</p>
+			</div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>

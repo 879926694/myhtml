@@ -1,0 +1,10 @@
+body {background-color:tan;}
+h1   {color:maroon;font-size:20pt;}
+hr   {color:red;}
+p    {font-size:11pt;margin-left:15px;text-align:center;}/*text-align:center;center是字体居中,left是居左,right是居右*/
+a:link    {color:green;}
+a:visited {color:yellow;}
+a:hover   {color:black;}
+a:active  {color:blue;}
+.class {color:blue;}
+#id {color:red;text-align:right;}
