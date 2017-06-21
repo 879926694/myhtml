@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>这个是标题</title>
+		<title>css文本总结</title>
 		<meta charset='utf-8'><!--使用 <meta> 元素来设置字符集-->
 		<meta http-equiv="refresh" content="300"><!--使用 <meta> 每几秒刷新页面(content的参数值为秒)-->
 		<meta name="description" content="免费在线教程">
@@ -11,19 +11,69 @@
 		<style type="text/css">
 			body{
 				background-color:white;/*这个是设置body的背景颜色*/
-				color:#ddd;/*这个是设置body中的文本颜色*/
+				color:black;/*这个是设置body中的文本颜色*/
 			}
 			h1{
 				color:RGB(255,0,0);
 			}
 			h2{
-				text-align:center;
+				text-align:center;/*文本位置center是中间 right是右侧 left是左侧*/
+			}
+			p{
+				text-align:justify;/*当text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。*/
+			}
+			a{
+				text-decoration:none;/*text-decoration:none是去a标签下划线*/
+			}
+			h3{
+				text-decoration:overline;/*text-decoration:overline是文本上面的线*/
+			}
+			h4{
+				text-decoration:line-through;/*text-decoration:line-through是通过文本中心的线*/
+			}
+			h5{
+				text-decoration:underline;/*text-decoration:underline是文本的下划线*/
+			}
+			#p1{
+				text-transform:uppercase;/*文本大写*/
+			}
+			#p2{
+				text-transform:lowercase;/*文本小写*/
+			}
+			#p3{
+				text-transform:capitalize;/*文本首字母大写*/
+			}
+			#p4{
+				text-indent:50px;/*文本首行缩进*/
 			}
 		</style>
 	</head>
 	<body>
 		<h1>lesson1 : 文本</h1>
 		<h2>测试</h2>
-		<p>测试文本样式</p>
+		<p>测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿测试文本样式去玩儿去玩儿群翁人情味儿</p>
+
+		<a href="http://www.baidu.com">测试a标签去掉下划线</a>
+		<h3>文本上面的样式线</h3>
+		<h4>文本中心线</h4>
+		<h5>文本下划线</h5>
+		<hr>
+		<p id="p1">mY nAME iS brq</p>
+		<p id="p2">mY nAME iS brq</p>
+		<p id="p3">my name is brq</p>
+		<p id="p4">测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123测试首行缩进123123123123123123123123</p>
+
+		<h1>css文本属性整体总结</h1>
+		<p>
+			<p>1.设置文本颜色<br>
+				color:red;<br>
+				color:#00ff00;<br>
+				color:rgb(0,0,255);<br>
+			<p>
+			<p>1.设置文本方向<br>
+				direction:rtl;<br><!--rtl意思是right to left-->
+				direction:ltr;<br>
+			<p>
+		</p>
 	</body>
 </html>
